@@ -18,3 +18,22 @@ The task consists of both coding and conceptual steps. Here is a list of tasks, 
 - Provide a baseline model as well as an accurate predictive model, which fulfills business requirements, i.e. increase credit card success rate and keep fees low.
 - In order that the business places confidence in your model, discuss the importance of the individual features and make the results of the model interpretable. Moreover, a sophisticated error analysis is very important for the business to understand the drawbacks of your approach.
 - In the last step of the project, give a proposal of how your model could be used by the business in everyday work, for instance, via a graphical user interface (GUI).
+
+### File Name:
+PSP_Jan_Feb_2019.xlsx : list of credit card transactions for DACH countries (Germany, Switzerland, Austria)
+
+### List of PSPs (=payments service providers) and service fees:
+![image](https://github.com/manaswikamila05/Credit-Card-Routing-for-Online-Purchase-via-Predictive-Modelling/assets/77529445/ebd70e71-eca4-4378-8f82-8a46c373b0b9)
+
+### Column Description:
+- tmsp: timestamp of transaction
+- country: country of transaction
+- amount: transaction amount
+- success: is 1 if payment is successful
+- PSP: name of payments service provider
+- 3D_secured: is 1 if customer is 3D identified (i.e. more secure online credit card payments)
+- card: credit card provider (Master, Visa, Diners)
+
+### Additional Info from Business Side:
+Many transactions fail at the first try. Therefore, customers try several times to transfer the money. If two transactions are within one minute, with the same amount of money and from the same country, it is (for a decent number of tries) safe to assume that they are payment attempts of the same purchase. Consider this possibility of several payment attempts of the same purchase in your machine learning model!
+
